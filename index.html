@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./card/style.css" />
+    <link rel="stylesheet" href="./cart-post/style.css" />
+    <link rel="icon" type="image/png" href="./img/V.svg" />
+    <title>V-shop</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Шапка -->
+      <header class="header">
+        <div class="logo">
+          <img src="./img/logo.svg" alt="Logo" />
+        </div>
+        <nav class="nav"></nav>
+      </header>
+
+      <!-- Каталог -->
+      <div class="content">
+        <div class="catalog" id="product-container"></div>
+
+        <!-- Корзина -->
+        <div class="cart">
+          <div class="cart-title">
+            <h2>CART</h2>
+          </div>
+
+          <div class="prod-bascket">
+            <div class="product-cart-bascket">
+            </div>
+
+            <div class="total-checkout">
+              <p class="total">Total: <span class="total__price"></span></p>
+              <button class="checkout-btn">CHECKOUT</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>
+          © 2020–2024, made with <span class="heart">♥</span> by
+          <a href="https://vistegra.by/" target="_blank">Vistegra</a>.
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

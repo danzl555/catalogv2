@@ -1,0 +1,93 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+} */
+
+.card {
+    width: 270px;
+    height: 360px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.29);    
+    padding: 10px;
+    text-align: left; /* Добавлено для выравнивания по левой стороне */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.product-image {
+    height: 132px;
+    
+    object-fit: cover;
+    margin: 0 auto 10px auto;
+}
+
+.title {
+    width: 204px;
+    font-size: 21px;
+    font-weight: 900;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.desc {
+    width: 250px;
+    max-height: 90px;
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    text-overflow: ellipsis;
+}
+
+
+
+.price-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 27px;
+    font-weight: 700;
+    color: #333;
+}
+
+.buy-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.buy-button:hover {
+    opacity: 0.9;
+}

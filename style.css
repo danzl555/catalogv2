@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 1920px;
+}
+
+.header {
+  width: 1240px;
+  margin: 0px auto;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 15px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Блок для каталога и корзины */
+.content {
+  width: 1240px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog {
+  width: 868px;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cart {
+  width: calc(1240px - 868px - 10px);
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0; /* Чтобы корзина оставалась на странице, при прокрутке она фиксируется сверху */
+  height: calc(100vh - 60px); /* Высота корзины 100vh минус 300px */
+  overflow-y: auto; /* Добавляем прокрутку, если содержимое корзины превышает высоту */
+}
+
+.cart-title {
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+}
+.cart h2 {
+  color: white;
+}
+
+.show-more-button {
+  display: block; 
+  margin: 20px auto;
+  padding: 10px 20px; 
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.show-more-button:hover {
+  background-color: #555;
+}
+
+
+
