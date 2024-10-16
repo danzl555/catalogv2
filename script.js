@@ -45,7 +45,7 @@ async function loadProducts() {
                     <div class="price-cart">
                         <p class="price">$${product.price}</p>
                         <button class="buy-button">
-                            <img src="../img/cart-icon.png" alt="cart icon" />
+                            <img src="./img/cart-icon.png" alt="cart icon" />
                         </button>
                     </div>
                 `;
